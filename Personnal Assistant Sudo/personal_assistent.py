@@ -128,8 +128,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login("user-name@xyz.com", "pwd")
-    server.sendmail("user-name@xyz.com", to, content)
+    server.login('rkthegreat789@gmail.com', 'password')
+    server.sendmail('rkthegreat789@gmail.com', to, content)
     server.close()
 
 
@@ -271,7 +271,7 @@ if __name__ == "__main__":
                 print("Sudo: What is the message for the email")
                 speak("What is the message for the email")
                 content = takeCommand()
-                to = 'reciever@xyz.com'
+                to = 'rkthegreat789@gmail.com'
                 sendEmail(to, content)
                 print("Email has sent")
                 speak("Email has sent")
